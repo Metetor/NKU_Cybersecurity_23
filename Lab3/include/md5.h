@@ -10,7 +10,7 @@ using std::string;
 using std::ifstream;
 
 typedef unsigned char BYTE;
-typedef unsigned long DWORD;
+typedef unsigned int DWORD;
 
 #define S11 7
 #define S12 12

@@ -4,16 +4,10 @@
 
 //Linux 字节序的问题，看看明天能不能解决一下，解决不了就写Windows上面报告。。。
 
-void test()
-{
-    std::string str_case ="jklmn";
-    MD5 md5;
-    md5.Update(str_case);
-    std::cout << "MD5(\"" + str_case + "\") = " << md5.Tostring()<< std::endl;
-}
+//解决方法:Linux上面的unsigned long 是8个byte,定义DWORD时改变为unsigned int就行了
+
 int main(int argc,char *argv[])
 {
-    //test();
     std::unordered_map<std::string, void(*)(int, char*[])> mapOp = {
     {"-t", print_t}, 
     {"-h", print_h}, 
