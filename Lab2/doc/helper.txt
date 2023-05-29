@@ -1,0 +1,9 @@
+程序使用说明
+将文件clone到本地后，进入client/build,运行cmake ..,之后运行make命令编译客户端程序
+进入server/build, 运行cmake ..,之后运行make,编译服务端程序
+
+进入对应的~/bin文件夹下，运行./server  
+./client，输入服务端IP 127.0.0.2
+按照提示输入随机数种子
+
+如果想要运行多个客户端程序，只需要启动多个命令终端，运行./client即可
